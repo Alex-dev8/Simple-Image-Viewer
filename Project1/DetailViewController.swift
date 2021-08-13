@@ -12,14 +12,13 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     var selectedImage: String?
-    var pictureNumber: Int?
-    var totalPictures: Int?
+    var numberOfPhotosTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // we set the navbar title to the name of the image
-        title = "\(pictureNumber!) of \(totalPictures!)"
+        title = numberOfPhotosTitle
         
         // we want to disable the large title for this view
         navigationItem.largeTitleDisplayMode = .never
